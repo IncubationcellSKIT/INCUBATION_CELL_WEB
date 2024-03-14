@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRIJAN</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./Assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+    
+
+    
+</head>
+
+<!--  colours: 
+    1. #DBE7EE - white-blue 
+    2.  #F0F3F2 - white-gray
+    3. #276BAD - blue
+    4. #F5F5F5 -white
+    5. #D5496F -pinkish
+
+
+
+ -->
+
+<body class="w-screen font-[Montserrat] h-auto ">
+
+    
+
+<nav class="bg-white border-gray-200 text-lg font-medium dark:bg-gray-900 dark:border-gray-700 p-2  z-20 w-screen pr-5  ">
+    
+  <div class="flex flex-wrap items-center justify-between mx-2 my-2 ">
+      <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="https://www.skit.ac.in/images/headers/skit_logo.png" class="sm:h-[90px] h-[60px] " alt="SKIT LOGO" />
+          <span class="self-center sm:text-xl text-[10px] leading-3 hidden sm:block font-medium whitespace-nowrap text-black">Swami Keshvanand Institute of Technology <br> Management & Gramothan, Jaipur</span>
+          <!-- <span class="self-center sm:text-xl text-4xl leading-3 sm:hidden font-[Ante] font-bold whitespace-nowrap text-slate-950 ">SKIT Jaipur</span> -->
+      </a>
+      <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2  dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="./index.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+          </li>
+          <li>
+              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto  md:dark:hover:bg-transparent"> About <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+    </svg></button>
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                  <ul class="py-2 text-sm text-black " aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="./Pages/about-us.html" class="block px-4 py-2 hover:bg-gray-400 ">SRIJAN</a>
+                    </li>
+                    <li>
+                      <a href="./Pages/team.html" class="block px-4 py-2 hover:bg-gray-400 "> Our Team</a>
+                    </li>
+                    <li>
+                      <a href="./Pages/mentors.html" class="block px-4 py-2 hover:bg-gray-400 ">Industry Mentors</a>
+                    </li>
+                    <li>
+                      <a href="./Pages/E-cell.html"  class="block px-4 py-2 hover:bg-gray-400 ">E-Cell</a>
+                    </li>
+                    <li>
+                      <a href="https://www.skit.ac.in/" target="_blank" class="block px-4 py-2 hover:bg-gray-400 ">SKIT Jaipur</a>
+                    </li>
+                  </ul>
+                  
+              </div>
+          </li>
+          <li>
+            <a href="./Pages/portfolio.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Portfolio</a>
+          </li>
+          <li>
+            <a href="./Pages/events.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Events</a>
+          </li>
+          <li>
+            <a href="./Pages/contacts.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+
+    <section class="landing-page h-[90vh] ">
+
+        <div id="rings" class="h-[80vh] w-screen absolute"></div>
+        <div class="relative text-white flex justify-between ml-5">
+            <div class="title-container mt-10 sm:ml-20">
+                
+                <h1 class="  text-5xl leading-snug"> <span class="text-[8rem] font-[Anta] text-stroke-1 text-transparent sm:text-[15vw] ">SKIT  </span> <br> <span class="   sm:text-[5vw]  "> Incubation Cell
+               </span>
+                </h1>
+                <br>
+                <p class=" sm:text-3xl text-xl font-medium stroke-black ">We encounter a mindset that values creativity, finding solutions, <br> and conducting research to improve our society and country.
+                </p>
+
+                
+                <button class="text-2xl mt-5 mr-5  hover:bg-green-500 duration-600   border rounded-[50px] pt-1 pb-1 pl-5 pr-5  ">Join US</button>
+
+                <button class="  mt-5 text-2xl border rounded-[50px] pt-1 pb-1 pl-5 pr-5  duration-600  hover:bg-white hover:text-gray-950  hover:border-red-600 hover:border-5   "><a href="about.html">Know More</a></button>
+
+
+            </div>
+            <!-- anima  -->
+            <!-- <div class="image-container">
+                <img class=" mr-20 " src="./asset/logo_png.png" alt="">
+
+            </div> -->
+        </div>
+
+    </section>
+    
+
+
+
+    <!-- intro -->
+
+
+<!-- 
+    <div class="flex justify-between">
+      <div class="w-1/3">
+        <div class="relative aspect-w-16 aspect-h-9">
+          <img class="object-cover w-full h-full" src="https://via.placeholder.com/1920x1080" alt="Image">
+          <div class="absolute inset-0 flex items-center justify-center text-center text-white">
+            <div>
+              <h2 class="text-lg md:text-xl lg:text-2xl font-semibold mb-2">Heading</h2>
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Button</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="w-1/3">
+        <!-- Image 2 -->
+      </div>
+      <div class="w-1/3">
+        <!-- Image 3 -->
+      </div>
+    </div>
+         <!-- --> 
+
+
+
+      <!-- what we do  -->
+
+
+
+
+
+    <h1 id="" class="heading  justify-center text-center py-16 text-4xl sm:text-5xl p-1">
+
+      <hr class=""> 
+       WHAT DO WE DO?
+
+      <hr class="">
+
+    </h1>
+
+    <div class=" flex flex-wrap  justify-center p-5">
+      <div class="card flex  flex-col  sm:w-[15vw] w-[80vw] rounded-lg bg-slate-200 justify-center  m-3 p-5 hover:border hover:border-blue-600 transition-all">
+          <img class="p-0 rounded-t-lg" src="https://cdn-icons-png.flaticon.com/512/2111/2111080.png" alt="Startup Incubation Image">
+          <h2 class="text-[1.2rem] text-center font-bold  mt-5 ">Startup Incubation</h2>
+          <p class="text-center text-sm mb-7">We nurture and support innovative startups, providing them with the resources and guidance they need to succeed.</p>
+      </div>
+
+
+      <div class="card flex   flex-col sm:w-[15vw] w-[80vw] rounded-lg bg-cyan-200 justify-center m-3 p-5 hover:border hover:border-blue-600">
+          <img class="p-0 rounded-t-lg" src="./Assets/talk.png" alt="Startup Incubation Image">
+          <h2 class="text-xl text-center font-bold  ">Expert Talk</h2>
+          <p class="text-center text-sm ">We organize expert talks where industry professionals share their knowledge and insights, providing valuable perspectives to our community.</p>
+      </div>
+
+
+      <div class="card flex  flex-col sm:w-[15vw] w-[80vw] rounded-lg bg-red-100 justify-center m-3 p-5 hover:border hover:border-blue-600">
+          <img class=" rounded-t-lg" src="./Assets/project.png" alt="Startup Incubation Image">
+          <h2 class="text-xl text-center font-bold ">Projects</h2>
+          <p class="text-center text-sm ">We collaborate on diverse projects, fostering creativity and innovation within our community. From ideation to execution, we support every stage of project development.</p>
+      </div>
+
+      
+  </div>
+
+
+
+
+
+
+    
+    <!-- programs  -->
+
+    <section class="" >
+
+    <h1 id="" class="heading  justify-center text-center py-16 text-4xl sm:text-5xl p-1">
+
+      <hr class=""> 
+       OUR PROGRAMS
+
+      <hr class="">
+
+    </h1>
+      
+       <div class="cards flex justify-center flex-wrap  my-10  ">
+
+
+        <div class="w-96 h-60 max-w-sm rounded overflow-hidden shadow-lg relative sm:m-5 my-8 ">
+          <div class="aspect-w-4 aspect-h-3">
+            <img class="w-full h-full object-fill duration-200 hover:scale-110" src="https://www.econlib.org/wp-content/uploads/2020/07/entrepreneurship2.jpg" alt="Image">
+          </div>
+          <button class="bg-blue-500 bg-opacity-50 hover:bg-opacity-55 hover:text-white text-black font-bold py-2 px-4 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            Lorem, ipsum dolor.
+          </button>
+        </div>
+
+        <div class="w-96 h-60 max-w-sm rounded overflow-hidden shadow-lg relative sm:m-5 my-8 ">
+          <div class="aspect-w-4 aspect-h-3">
+            <img class="w-full h-full object-fill duration-200 hover:scale-110" src="https://poetsandquants.com/wp-content/uploads/sites/5/2022/11/businessplan-entrepreneurship.jpg" alt="Image">
+          </div>
+          <button class="bg-blue-500 bg-opacity-50 hover:bg-opacity-55 hover:text-white text-black font-bold py-2 px-4 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            Lorem ipsum dolor.
+          </button>
+        </div>
+
+        <div class="w-96 h-60 max-w-sm rounded overflow-hidden shadow-lg relative sm:m-5 my-8 ">
+          <div class="aspect-w-4 aspect-h-3">
+            <img class="w-full h-full object-fill duration-200 hover:scale-110" src="https://assets.entrepreneur.com/content/3x2/2000/20170731065840-plan-research-write-think-idea." alt="Image">
+          </div>
+          <button class="bg-blue-500 bg-opacity-50 hover:bg-opacity-55 hover:text-white text-black font-bold py-2 px-4 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            Lorem ipsum dolor.
+          </button>
+        </div>
+
+       </div>  
+      
+
+       </div>
+
+     
+
+
+    </section>
+
+    
+
+    <h1 id="" class="heading  justify-center text-center py-16 text-4xl sm:text-5xl p-1">
+
+      <hr class=""> 
+       IMPACT SO FAR
+
+      <hr class="">
+
+    </h1>
+
+    
+    
+
+    <section class="impact flex flex-wrap  justify-center sm:text-2xl p-5 ">
+
+      <div class="flex justify-center mx-10 rounded-[50%] p-8 my-10 items-center flex-col h-auto bg-[#81a2f8]">
+        <div id="countup1" class=" text-white font-bold  rounded-lg  text-center text-2xl md:text-5xl "></div>
+        <p>Jobs Created </p>
+      </div>
+
+      <div class="flex justify-center mx-10 rounded-[50%] p-8 my-10 items-center flex-col h-auto bg-[#5c7fd5]">
+        <div id="countup2" class=" text-white font-bold  rounded-lg  text-center text-2xl md:text-5xl"></div>
+        <p>Jobs Created </p>
+      </div>
+
+      <div class="flex justify-center mx-10 rounded-[50%] p-8 my-10 items-center flex-col h-auto bg-[#81a2f8]">
+        <div id="countup3" class=" text-white font-bold  rounded-lg  text-center text-2xl  md:text-5xl"></div>
+        <p>Jobs Created </p>
+      </div>
+
+
+    </section>
+   
+     
+
+
+    <h1 id="" class="heading  justify-center text-center py-16 text-4xl sm:text-5xl p-1">
+
+      <hr class=""> 
+       Our Collabrations 
+
+      <hr class="">
+
+    </h1>
+
+    <div class="marqueee my-16">
+      <div class="marquee-container">
+        <div class="marquee md:h-32 h-32 ">
+          <img src="https://www.aicbanasthali.org/storage/Government_Collaborations/aV2wyj2ly2FiRYooeHS9mXN1ysmEWYQajodxQhvd.png" alt="Image 1" class="marquee-item p-3">
+          <img src="https://www.aicbanasthali.org/storage/International_Collaboration/OMMXv6KrGUc9U0DpqcmNvZExMoNkWfhQeMnsX8ou.png" alt="Image 2" class="marquee-item p-3">
+          <img src="https://www.aicbanasthali.org/storage/Collaboration/n7wefPme7qHppkA3tI3Ls5mk7U8MxpyW4KDcKsVZ.png" alt="Image 2" class="marquee-item p-3">
+          <img src="https://www.aicbanasthali.org/storage/Government_Collaborations/24X3EpODE0TmtEbPlPAW3DlMNLmbGBru1UGiHCNB.jpg" alt="Image 2" class="marquee-item p-3">
+          <img src="https://www.aicbanasthali.org/storage/International_Collaboration/OMMXv6KrGUc9U0DpqcmNvZExMoNkWfhQeMnsX8ou.png" alt="Image 2" class="marquee-item p-3">
+          
+        </div>
+      </div>
+      <!-- Include Tailwind CSS -->
+
+<style>
+  /* Additional custom styles */
+  .marquee-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  .marquee {
+    display: flex;
+    animation: marquee 50s linear infinite;
+  }
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100%));
+    }
+  }
+</style>
+
+      
+    </div>
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- TEAM  -->
+
+    <h1 id="" class="heading  justify-center text-center py-16 text-4xl sm:text-5xl p-1">
+
+      <hr class=""> 
+       OUR TEAM
+
+      <hr class="">
+
+    </h1>
+      
+
+    <div class="flex flex-wrap  mb-5">
+      <div class="w-full max-w-full  mb-6  mx-auto">
+        <div class="relative flex-[1_auto] flex flex-col break-words min-w-0 bg-clip-border rounded-[.95rem] border border-dashed border-stone-200 bg-white m-5">
+          <!-- card body  -->
+          <div class="flex-auto block  px-9 justify-center">
+            <div>
+              <div class="mb-12 text-center">
+                
+                <span class="text-[1.5rem] text-center font-medium text-muted"> Meet our talented team, a dynamic group of experts driven by passion and innovation. </span>
+              </div>
+              <div class="flex flex-wrap w-full justify-center">
+                <div class="flex flex-col mr-5 text-center mb-11 lg:mr-16">
+                  <div class="inline-block mb-4 relative shrink-0 rounded-[.95rem]">
+                    <img class="inline-block shrink-0 rounded-[.95rem] w-[200px] h-[200px]" src="https://raw.githubusercontent.com/Loopple/loopple-public-assets/main/riva-dashboard-tailwind/img/avatars/avatar11.jpg" alt="avarat image">
+                  </div>
+                  <div class="text-center">
+                    <a href="javascript:void(0)" class="text-dark font-semibold hover:text-primary text-[1.25rem] transition-colors duration-200 ease-in-out">Samantha Reynolds</a>
+                    <span class="block font-medium text-muted">Marketing Manager</span>
+                  </div>
+                </div>
+                <div class="flex flex-col mr-5 text-center mb-11 lg:mr-16">
+                  <div class="inline-block mb-4 relative shrink-0 rounded-[.95rem]">
+                    <img class="inline-block shrink-0 rounded-[.95rem] w-[200px] h-[200px]" src="https://raw.githubusercontent.com/Loopple/loopple-public-assets/main/riva-dashboard-tailwind/img/avatars/avatar2.jpg" alt="avarat image">
+                  </div>
+                  <div class="text-center">
+                    <a href="javascript:void(0)" class="text-dark font-semibold hover:text-primary text-[1.25rem] transition-colors duration-200 ease-in-out">Benjamin Martinez</a>
+                    <span class="block font-medium text-muted">Sales Executive</span>
+                  </div>
+                </div>
+                <div class="flex flex-col mr-5 text-center mb-11 lg:mr-16">
+                  <div class="inline-block mb-4 relative shrink-0 rounded-[.95rem]">
+                    <img class="inline-block shrink-0 rounded-[.95rem] w-[200px] h-[200px]" src="https://raw.githubusercontent.com/Loopple/loopple-public-assets/main/riva-dashboard-tailwind/img/avatars/avatar5.jpg" alt="avarat image">
+                  </div>
+                  <div class="text-center">
+                    <a href="javascript:void(0)" class="text-dark font-semibold hover:text-primary text-[1.25rem] transition-colors duration-200 ease-in-out">Emily Turner</a>
+                    <span class="block font-medium text-muted">Customer Support</span>
+                  </div>
+                </div>
+                <div class="flex flex-col mr-5 text-center mb-11 lg:mr-16">
+                  <div class="inline-block mb-4 relative shrink-0 rounded-[.95rem]">
+                    <img class="inline-block shrink-0 rounded-[.95rem] w-[200px] h-[200px]" src="https://raw.githubusercontent.com/Loopple/loopple-public-assets/main/riva-dashboard-tailwind/img/avatars/avatar24.jpg" alt="avarat image">
+                  </div>
+                  <div class="text-center">
+                    <a href="javascript:void(0)" class="text-dark font-semibold hover:text-primary text-[1.25rem] transition-colors duration-200 ease-in-out">Jason Anderson</a>
+                    <span class="block font-medium text-muted">Development Engineer</span>
+                  </div>
+                </div>
+                <div class="flex flex-col mr-5 text-center mb-11 lg:mr-16">
+                  <div class="inline-block mb-4 relative shrink-0 rounded-[.95rem]">
+                    <img class="inline-block shrink-0 rounded-[.95rem] w-[200px] h-[200px]" src="https://raw.githubusercontent.com/Loopple/loopple-public-assets/main/riva-dashboard-tailwind/img/avatars/avatar23.jpg" alt="avarat image">
+                  </div>
+                  <div class="text-center">
+                    <a href="javascript:void(0)" class="text-dark font-semibold hover:text-primary text-[1.25rem] transition-colors duration-200 ease-in-out">Olivia Carter</a>
+                    <span class="block font-medium text-muted">Creative Director</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+
+
+    
+
+
+
+
+  <!-- footer -->
+
+
+
+
+<footer class="bg-[#F0F3F2] ">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0 ">
+            <iframe class="rounded-xl shadow-md shadow-black" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1121.5063999850033!2d75.8664899678998!3d26.822101160076855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db770070b115f%3A0x6f306afd08a3e737!2sSwami%20Keshvanand%20Institute%20of%20Technology%2C%20Management%20%26%20Gramothan%20(SKIT)!5e0!3m2!1sen!2sin!4v1708445672406!5m2!1sen!2sin" width="330" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline">Flowbite</a>
+                      </li>
+                      <li>
+                          <a href="htt#" class="hover:underline">Tailwind CSS</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="https://github.co#" class="hover:underline ">Github</a>
+                      </li>
+                      <li>
+                          <a href="https://#" class="hover:underline">Discord</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline">Privacy Policy</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/" class="hover:underline">SRIJAN™</a>. All Rights Reserved.
+          </span>
+          <div class="flex mt-4 sm:justify-center sm:mt-0">
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                        <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                    </svg>
+                  <span class="sr-only">Facebook page</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
+                        <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
+                    </svg>
+                  <span class="sr-only">Discord community</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                    <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+                </svg>
+                  <span class="sr-only">Twitter page</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                  </svg>
+                  <span class="sr-only">GitHub account</span>
+              </a>
+              
+          </div>
+      </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="../path/to/countup.min.js"></script>
+
+    <script src="./script.js"></script>
+    <script>
+        VANTA.RINGS({
+          el: "#rings",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: true,
+          minHeight: 100.00,
+          minWidth: 100.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          backgroundColor: 0x10102a,
+          color: 0x160228
+        })
+    </script>
+</body>
+</html>
